@@ -2,12 +2,13 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
+import './index.css'  // o como llames a tu CSS de Tailwind
 
 import App from './App.jsx'
 import { AuthProvider } from './context/AuthContext.jsx'
 import { UserProvider } from './context/UserContext.jsx'
 
-import './index.css'  // o como llames a tu CSS de Tailwind
+
 
 const container = document.getElementById('root')
 const root = createRoot(container)
