@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import UserList from './components/UserList.jsx';
-import UserForm from './components/UserForm.jsx';
-import Login from './components/Login.jsx';
-import Register from './components/Register.jsx';
+import UserList from './components/UserList';
+import UserForm from './components/UserForm';
+import Login from './components/Login';
+import Register from './components/Register';
 import { useAuth } from './context/AuthContext.jsx';
 
 // Componente para proteger rutas

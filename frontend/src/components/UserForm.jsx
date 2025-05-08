@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useUserContext } from '../context/UserContext';
-import './UserForm.css';
+import '../index.css';
 
 function UserForm() {
   const { id } = useParams();
