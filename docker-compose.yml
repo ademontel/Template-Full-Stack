@@ -36,14 +36,16 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    restart: on-failure
-    ports:
-      - "3000:3000"
+    # Cambiamos working_dir a /app (misma carpeta que tu Dockerfile usa)
+    working_dir: /app
+    command: npm run dev
     volumes:
-      - ./frontend:/app
+      # Montamos tu carpeta local frontend en /app
+      - ./frontend:/app:cached
+      # Preservamos los node_modules que la imagen creó en /app/node_modules
       - /app/node_modules
-    depends_on:
-      - backend
+    ports:
+      - "5173:5173"
 
 volumes:
   postgres_data:

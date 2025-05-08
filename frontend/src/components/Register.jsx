@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useUserContext } from '../context/UserContext';
-import { useAuth } from '../context/AuthContext';
+import { useUserContext } from '../context/UserContext.jsx';
+import { useAuth } from '../context/AuthContext.jsx';
 import './Login.css'; // Reutilizamos los estilos del login
 
 function Register() {

@@ -2,7 +2,7 @@
 
 ## Estructura de carpetas
 
-- **frontend/**: Aplicación React con Flux y Bootstrap
+- **frontend/**: Aplicación React+Vite con Context API y Tailwind
 - **backend/**: Servicio FastAPI
 - **docker-compose.yml**: Levanta frontend, backend y PostgreSQL
 
