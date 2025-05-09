@@ -17,9 +17,6 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# Crear la instancia de FastAPI y pasarla al admin
-app = FastAPI()
-
 # Configurar SQLAdmin
 from app.admin import setup_admin
 setup_admin(app)
